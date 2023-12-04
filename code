@@ -1,0 +1,32 @@
+cmd실행
+cd c:\
+cd C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\> 
+vcvars64
+
+cd C:\
+cd anu//anu파일로 접근
+
+notepad mycp.c
+-------------mycp.c--------------
+#include <stdio.h>
+
+int main(int argc, char *argv[]) {
+    FILE *s, *t;
+    char c;
+    s = fopen(argv[1], "r"); 
+    t = fopen(argv[2], "w");
+    while ((c = fgetc(s)) != EOF)
+    fputc(c, t);
+    fclose(s);
+    fclose(t);
+    return 0;
+}
+--------------------------------
+ANSI파일로 저장
+
+notepad f1.txt//f1.txt작성
+복사할 내용 입력 후 저장
+
+cl mycp.c//mycp컴파일
+mycp f1.txt f2.txt//f2를 f1내용으로 복사
+

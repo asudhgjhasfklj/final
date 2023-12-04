@@ -6,7 +6,7 @@ vcvars64
 cd C:\
 cd anu//anu파일로 접근
 
-notepad mycp.c
+notepad mycp.c//mycp.c작성
 -------------mycp.c--------------
 #include <stdio.h>
 
